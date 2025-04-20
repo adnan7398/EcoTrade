@@ -2,6 +2,8 @@ import React from 'react';
 import { ArrowRight, Leaf } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+
+// hero section made here
 const Hero: React.FC = () => {
   return (
     <section className="relative overflow-hidden">
