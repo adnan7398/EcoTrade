@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 const AboutPage: React.FC = () => {
   return (
     <div className="bg-neutral-50 min-h-screen">
-      {/* Hero Section */}
       <section className="relative py-20 bg-primary-900 text-white overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <img 
