@@ -7,7 +7,6 @@ const Footer: React.FC = () => {
     <footer className="bg-neutral-900 text-white pt-12 pb-6">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Leaf className="h-6 w-6 text-primary-400" />
@@ -32,8 +31,6 @@ const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-          
-          {/* Quick Links */}
           <div>
             <h4 className="text-lg font-medium mb-4 text-white">Quick Links</h4>
             <ul className="space-y-2 text-sm">
