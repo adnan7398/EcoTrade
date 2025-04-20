@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Product } from '../../types';
 import ProductCard from '../product/ProductCard';
 import { firestore } from '../../services/firebase';
-
+ // features added 
 const FeaturedProducts: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
@@ -68,5 +68,6 @@ const FeaturedProducts: React.FC = () => {
     </section>
   );
 };
+
 
 export default FeaturedProducts;
