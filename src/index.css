@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-neutral-50 text-neutral-800;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium text-neutral-900;
+  }
+  
+  h1 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+  
+  a {
+    @apply text-primary-600 hover:text-primary-700 transition duration-300;
+  }
+  
+  button {
+    @apply transition duration-300;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition duration-300 focus:outline-none focus:ring-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-600 text-white hover:bg-secondary-700 focus:ring-secondary-300;
+  }
+  
+  .btn-accent {
+    @apply bg-accent-600 text-neutral-900 hover:bg-accent-700 focus:ring-accent-300;
+  }
+  
+  .btn-outline {
+    @apply border border-primary-600 text-primary-600 bg-transparent hover:bg-primary-50 focus:ring-primary-300;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-eco overflow-hidden transition-all duration-300;
+  }
+  
+  .input {
+    @apply w-full px-4 py-2 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-primary-500;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+  
+  .eco-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .eco-badge-low {
+    @apply bg-success-50 text-success-900;
+  }
+  
+  .eco-badge-medium {
+    @apply bg-warning-50 text-warning-900;
+  }
+  
+  .eco-badge-high {
+    @apply bg-error-50 text-error-900;
+  }
+}
+
+/* Custom animations */
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Carbon footprint indicator styles */
+.carbon-indicator {
+  position: relative;
+  height: 8px;
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.carbon-indicator-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: width 1s ease-in-out;
+}
+
+.carbon-indicator-fill.low {
+  background-color: #4CAF50;
+}
+
+.carbon-indicator-fill.medium {
+  background-color: #FFC107;
+}
+
+.carbon-indicator-fill.high {
+  background-color: #F44336;
+}
