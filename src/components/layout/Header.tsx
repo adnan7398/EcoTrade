@@ -26,7 +26,6 @@ const Header: React.FC = () => {
             <span className="text-xl font-semibold text-primary-800">EcoTrade</span>
           </Link>
           
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link 
               to="/" 
