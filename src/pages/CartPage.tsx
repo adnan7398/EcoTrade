@@ -23,11 +23,12 @@ const CartPage: React.FC = () => {
     
     setIsApplying(true);
     
-    // Simulate API call
+   
     setTimeout(() => {
       setIsApplying(false);
       setCouponCode('');
-      // Here would normally update the cart with discounted prices
+      alert('Coupon applied successfully!'); // Simulate coupon application
+      // In a real application, you would validate the coupon code here 
     }, 1000);
   };
   
