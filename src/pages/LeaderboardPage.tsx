@@ -103,7 +103,6 @@ const LeaderboardPage: React.FC = () => {
               ))}
             </div>
             
-            {/* Full leaderboard */}
             <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-sm overflow-hidden">
               <div className="p-8">
                 <h2 className="text-xl font-semibold mb-6 flex items-center">
