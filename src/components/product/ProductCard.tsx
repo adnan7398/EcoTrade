@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCart, Info } from 'lucide-react';
+import { ShoppingCart, Info, LeafIcon } from 'lucide-react';
 import { Product } from '../../types';
 import CarbonFootprintBadge from '../common/CarbonFootprintBadge';
 import { useCartStore } from '../../store';
@@ -29,14 +29,24 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               alt={product.name} 
               className="w-full h-64 object-cover transition duration-300 group-hover:scale-105"
             />
-            <div className="absolute top-2 right-2">
-              <CarbonFootprintBadge value={product.carbonFootprint} size="sm" showText={false} />
+            
+            {/* Sustainability Badge */}
+            <div className="absolute top-2 right-2 bg-primary-50 border border-primary-100 rounded-full px-2 py-1 flex items-center">
+              <LeafIcon className="h-4 w-4 text-primary-600 mr-1" />
+              <span className="text-xs font-medium text-primary-800">
+                {product.sustainabilityScore}% Eco
+              </span>
             </div>
           </div>
           
           <div className="p-4">
             <h3 className="font-medium text-lg mb-1 line-clamp-1">{product.name}</h3>
-            <p className="text-neutral-500 text-sm mb-3 line-clamp-2">{product.description}</p>
+            <p className="text-neutral-500 text-sm mb-2 line-clamp-2">{product.description}</p>
+            
+            {/* Sustainability Metric */}
+            <div className="flex items-center mb-3 text-xs text-primary-700 bg-primary-50 px-2 py-1 rounded-md w-fit">
+              <span>Saves {product.carbonFootprint} kg CO2e</span>
+            </div>
             
             <div className="flex justify-between items-center">
               <span className="font-semibold text-lg">${product.price.toFixed(2)}</span>
@@ -78,7 +88,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             
             <div>
               <h4 className="text-sm font-medium text-neutral-700 mb-1">Environmental Impact</h4>
-              <CarbonFootprintBadge value={product.carbonFootprint} showText={true} />
+              <div className="flex items-center">
+                <CarbonFootprintBadge value={product.carbonFootprint} showText={true} />
+                <div className="ml-2 text-xs text-primary-700">
+                  Saves {product.carbonFootprint} kg CO2e
+                </div>
+              </div>
             </div>
             
             <div>
