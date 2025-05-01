@@ -210,12 +210,12 @@ const AboutPage: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <img 
-                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-                alt="Sarah Johnson" 
+                src="src/uploads/profile copy.jpeg" 
+                alt="MOHD ADNAN" 
                 className="w-full h-64 object-cover object-center"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">Sarah Johnson</h3>
+                <h3 className="text-xl font-bold mb-1">MOHD ADNAN</h3>
                 <p className="text-primary-600 mb-3">Co-Founder & CEO</p>
                 <p className="text-neutral-600 text-sm">
                   Environmental scientist with a passion for making sustainability accessible to everyone.
@@ -225,12 +225,12 @@ const AboutPage: React.FC = () => {
             
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <img 
-                src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-                alt="Michael Chen" 
+                src="mohit copy.jpeg" 
+                alt="Mohit" 
                 className="w-full h-64 object-cover object-center"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">Michael Chen</h3>
+                <h3 className="text-xl font-bold mb-1">MOHIT</h3>
                 <p className="text-primary-600 mb-3">Co-Founder & CTO</p>
                 <p className="text-neutral-600 text-sm">
                   Tech innovator focused on using data to drive environmental change and transparency.
@@ -241,11 +241,11 @@ const AboutPage: React.FC = () => {
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <img 
                 src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-                alt="Aisha Patel" 
+                alt="Mohd Faizan" 
                 className="w-full h-64 object-cover object-center"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">Aisha Patel</h3>
+                <h3 className="text-xl font-bold mb-1">Mohd Faizan</h3>
                 <p className="text-primary-600 mb-3">Head of Product</p>
                 <p className="text-neutral-600 text-sm">
                   Product designer with experience in creating sustainable consumer goods and services.
@@ -256,7 +256,7 @@ const AboutPage: React.FC = () => {
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <img 
                 src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-                alt="David Okafor" 
+                alt="Mohd Faizan" 
                 className="w-full h-64 object-cover object-center"
               />
               <div className="p-6">
