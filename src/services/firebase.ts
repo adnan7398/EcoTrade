@@ -291,17 +291,37 @@ const mockProducts = generateMockProducts();
 
 // Generate mock orders
 const mockOrders: Order[] = [];
+interface LeaderboardEntry {
+  userId: string;
+  displayName: string;
+  photoURL?: string;
+  points: number;
+  carbonSaved: number;
+}
 
-// Generate mock leaderboard
+const collegeStudents = [
+  { name: "Ankit Sharma", photoURL: "https://randomuser.me/api/portraits/men/11.jpg" },
+  { name: "Riya Verma", photoURL: "https://randomuser.me/api/portraits/women/12.jpg" },
+  { name: "Vikas Mehta", photoURL: "https://randomuser.me/api/portraits/men/13.jpg" },
+  { name: "Pooja Gupta", photoURL: "https://randomuser.me/api/portraits/women/14.jpg" },
+  { name: "Neeraj Kumar", photoURL: "https://randomuser.me/api/portraits/men/15.jpg" },
+  { name: "Sonal Tiwari", photoURL: "https://randomuser.me/api/portraits/women/16.jpg" },
+  { name: "Aman Joshi", photoURL: "https://randomuser.me/api/portraits/men/17.jpg" },
+  { name: "Kriti Singh", photoURL: "https://randomuser.me/api/portraits/women/18.jpg" },
+  { name: "Rohit Yadav", photoURL: "https://randomuser.me/api/portraits/men/19.jpg" },
+  { name: "Waqas Anwar", photoURL: "https://randomuser.me/api/portraits/women/20.jpg" }
+];
+
 const generateMockLeaderboard = (): LeaderboardEntry[] => {
-  return Array(10).fill(null).map((_, index) => ({
+  return collegeStudents.map((student) => ({
     userId: uuidv4(),
-    displayName: faker.person.fullName(),
-    photoURL: index % 3 === 0 ? `https://randomuser.me/api/portraits/${index % 2 ? 'women' : 'men'}/${index + 1}.jpg` : undefined,
+    displayName: student.name,
+    photoURL: student.photoURL,
     points: Math.floor(Math.random() * 1000) + 100,
     carbonSaved: parseFloat((Math.random() * 500).toFixed(2))
   }));
 };
+
 
 const mockLeaderboard = generateMockLeaderboard();
 

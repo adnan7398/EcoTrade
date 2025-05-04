@@ -240,7 +240,7 @@ const AboutPage: React.FC = () => {
             
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <img 
-                src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+                src="src/uploads/faizan copy.jpeg" 
                 alt="Mohd Faizan" 
                 className="w-full h-64 object-cover object-center"
               />
@@ -255,12 +255,12 @@ const AboutPage: React.FC = () => {
             
             <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <img 
-                src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+                src="src/uploads/image.png" 
                 alt="Mohd Faizan" 
                 className="w-full h-64 object-cover object-center"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-1">David Okafor</h3>
+                <h3 className="text-xl font-bold mb-1">Waqas Anwar</h3>
                 <p className="text-primary-600 mb-3">Sustainability Director</p>
                 <p className="text-neutral-600 text-sm">
                   Climate scientist specializing in carbon footprint assessment and lifecycle analysis.
